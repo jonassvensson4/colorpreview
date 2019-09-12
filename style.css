@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Whitney;
+    font-weight: 400;
+    src: url(whitney.woff) format("woff")
+}
+
+body {
+    background: #36393f;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+#username {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+    width: 80px;
+    font-family: Whitney;
+}
+
+#time {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    float: left;
+}
+
+p {
+    color: #dcddde;
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.3;
+    user-select: text;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#message-wrapper {
+    padding: 20px 40px 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+#text-wrapper {
+  margin-left: 60px;
+}
+
+#color-wrapper {
+    margin: 20px 0 0 60px;
+}
+
+ul {
+    display: inline-block;
+    padding: 0 20px 0 0;
+}
+
+#color-wrapper ul {
+    float: left;
+}
+
+.jqx-color-picker-panel {
+    display: none;
+}
+
+.jqx-color-picker-map-hue,
+.jqx-color-picker-bar-hue {
+    border: none;
+}
+
+#colorPicker {
+    float: left;
+}
+
+#colorHex {
+    background: transparent;
+    border: none;
+    width: 100px;
+    float: left;
+    font-size: 25px;
+    margin-left: 10px;
+    color: #dcddde;
+    border-bottom: 1px solid transparent;
+}
+
+#colorHex:hover {
+    border-bottom: 1px solid #dcddde;
+}
+
+#username:focus,
+#colorHex:focus {
+    outline: none;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#default-wrapper {
+    margin-left: 80px;
+    float: left;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.light {
+    color: #ffffff;
+}
