@@ -3,47 +3,85 @@
     <head>
         <title>Discord Role Color Preview</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="jqx.base.css">
-        <link rel="stylesheet" href="jqx.energyblue.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/jqx.base.css">
+        <link rel="stylesheet" href="assets/css/jqx.energyblue.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
-        <div id="message-wrapper">
-            <img id="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7iKmnnNIeb6UqnoWVP361vYHy9eSGGeL0_YYiSAa2sURuusrb" />
-            <div id="text-wrapper">
-                <input id="username" value="Username" spellcheck="false"/>
-                <h1 id="time">Today at 3.50 PM</h1>
-                <p>This is a message</p>
+    <body class="theme-dark">
+        <div>
+            <div id="servers-wrapper">
+                <div id="servers-icons">
+                    <div class="server-icon" id="discord-logo">
+                        <span class="svg-discord"></span>
+                    </div>
+                    <div class="server-icon">
+                        <img src="assets/images/servericon.png" alt="server icon"/>
+                    </div>
+                </div>
             </div>
-        </div>    
-        <div id="color-wrapper">
-            <div id="colorPicker"></div>
-            <form>
-                <input id="colorHex" value="FFFFFF" spellcheck="false"/>
-            </form>
-            <div id="default-wrapper">
-                <h2>Default colors</h2>
-                <ul class="d-colors">
-                    <li color="bb1e1e" class="light">Red</li>
-                    <li color="d6680e" class="light">Orange</li>
-                    <li color="0a0606" class="light">Black</li>
-                    <li color="fbff00">Yellow</li>
-                    <li color="f092f3">Pink</li>
-                    <li color="00ff26">Green</li>
-                </ul>
-                <ul class="d-colors">
-                    <li color="9706f9" class="light">Purple</li>
-                    <li color="0015ff" class="light">Blue</li>
-                    <li color="ffb7c5">Cherry Pink</li>
-                    <li color="ff00fe" class="light">Royal Pink</li>
-                    <li color="20294c" class="light">Dark Blue</li>
-                    <li color="98ff98">Mint</li>
-                    <li color="7cf7cc">Sea foam green</li>
-                </ul>
+            <div id="friends-wrapper">
+                <div id="friends-menu-wrapper">
+                    <input placeholder="Find or start a conversation" type="text" spellcheck="false" />
+                    <hr />
+                    <div id="friends-menu">
+                        <p><span class="svg-activity"></span><span>Activity</span></p>
+                        <p><span class="svg-library"></span>Library</p>
+                        <p><span class="svg-nitro"></span>Nitro</p>
+                        <p><span class="svg-friends"></span>Friends</p>
+                    </div>
+                </div>
+                <div id="friends-list">
+                    <h1>Direct messages</h1>
+                    <div class="friend">
+                        <form id="avatar-input">
+                            <input type="text" spellcheck="false" autocomplete="off" placeholder="Direct link" value="https://i.gyazo.com/ede4b9da219a73a1b39bdd8e66f812eb.png"/>
+                        </form>
+                        <img src="https://i.gyazo.com/ede4b9da219a73a1b39bdd8e66f812eb.png" alt="Avatar" id="avatar" class="avatar"/>
+                        <input value="Username" type="text" id="username" spellcheck="false" autocomplete="off" placeholder="Username"/>
+                    </div>
+                </div>
+                <div id="color-tools">
+                    <div id="switch-wrapper">
+                        <p>Light theme</p>
+                        <label class="switch">        
+                            <input type="checkbox" id="theme" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <p>Dark theme</p>
+                    </div>
+                    <input id="hex" type="text" value="FFFFFF"/>
+                    <div id="colorPicker"></div>
+                </div>
+            </div>
+            <div id="messages-wrapper">
+                <div id="messages-title">
+                    <p><span class="svg-at">@</span><span class="username">Username</span></p>
+                    <div id="messages-actions">
+                        <span class="svg-call"></span>
+                        <span class="svg-video"></span>
+                        <span class="svg-pin"></span>
+                        <span class="svg-add"></span>
+                        <input placeholder="Search" type="test" spellcheck="false"/>
+                        <span class="svg-at"></span>
+                        <span class="svg-help"></span>
+                    </div>
+                </div>
+                <div id="messages">
+                    <div class="message">
+                        <img src="assets/images/avatar.png" alt="Avatar" class="avatar"/>
+                        <span class="username">Username</span>
+                        <span class="time">today at 3.15 PM</span>
+                        <p>Message</p>
+                    </div>
+                </div>
+                <form>
+                    <input placeholder="Send message to Username" type="text" id="message-input" required spellcheck="false" autocomplete="off"/>
+                </form>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="jqx-all.js"></script>
-        <script src="init.js" type="text/javascript"></script>
+        <script src="assets/js/jqx-all.js"></script>
+        <script src="assets/js/svgs.js" type="text/javascript"></script>
+        <script src="assets/js/init.js" type="text/javascript"></script>
     </body>
 </html>
