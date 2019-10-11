@@ -26,9 +26,9 @@ $('#avatar-input').submit(() => {
     return false;
 });
 
-$('#message-input').submit(() => {
+$('#message-form').submit(() => {
     $('#messages').append(`<div class="message">
-        <img src="assets/images/avatar.png" alt="Avatar"/>
+        <img src="${ $('#avatar-input input').val() }" alt="Avatar" class="avatar"/>
         <span class="username">Username</span>
         <span class="time">today at 3.15 PM</span>
         <p>${ $('#message-input').val() }</p>

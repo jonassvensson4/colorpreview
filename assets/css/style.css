@@ -200,7 +200,8 @@ input:focus {
     width: 150px !important;
 }
 
-#avatar {
+#avatar,
+.avatar {
     width: 33px;
     height: 33px;
     border-radius: 100%;
@@ -397,7 +398,6 @@ input:checked + .slider:before {
     color: var(--text-normal);
     margin: 10px 20px 10px 340px;
     padding-top: 10px;
-    /* border-top: 1px solid  var(--channeltextarea-background); */
     border-bottom: 1px solid  var(--channeltextarea-background);
 }
 
@@ -420,6 +420,8 @@ input:checked + .slider:before {
     position: relative;
     top: -18px;
     margin-left: 56px;
+    font-weight: 500;
+    color: var(--text-normal);
 }
 
 /* Discord color scheme */
