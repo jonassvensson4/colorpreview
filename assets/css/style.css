@@ -433,3 +433,46 @@ input:checked + .slider:before {
 .theme-light {
     --header-primary:#060607;--header-secondary:#4f5660;--text-normal:#2e3338;--text-muted:#747f8d;--text-link:#0067e0;--channels-default:#6a7480;--interactive-normal:#4f5660;--interactive-hover:#2e3338;--interactive-active:#060607;--interactive-muted:#c7ccd1;--background-primary:#fff;--background-secondary:#f2f3f5;--background-tertiary:#e3e5e8;--background-accent:#747f8d;--background-floating:#fff;--background-mobile-header:#fff;--background-modifier-hover:rgba(116,127,141,0.08);--background-modifier-active:rgba(116,127,141,0.16);--background-modifier-selected:rgba(116,127,141,0.24);--background-modifier-accent:rgba(6,6,7,0.08);--elevation-low:0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);--elevation-high:0 8px 16px rgba(0,0,0,0.16);--logo-primary:#7289da;--guild-header-text-shadow:0 1px 1px hsla(0,0%,100%,0.4);--channeltextarea-background:#ebedef;--activity-card-background:#fff;--deprecated-panel-background:#ebedef;--deprecated-card-bg:#f8f9f9;--deprecated-card-editable-bg:rgba(246,246,247,0.6);--deprecated-store-bg:#f8f9f9;--deprecated-quickswitcher-input-background:#fff;--deprecated-quickswitcher-input-placeholder:rgba(79,84,92,0.3);--deprecated-text-input-bg:rgba(79,84,92,0.02);--deprecated-text-input-border:rgba(79,84,92,0.3);--deprecated-text-input-border-hover:#b9bbbe;--deprecated-text-input-border-disabled:#dcddde;--deprecated-text-input-prefix:#b9bbbe
 }
+
+/* Media, responsive */
+
+@media only screen and (max-width: 1062px) {
+    #servers-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    #messages-actions {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #friends-menu-wrapper,
+    #friends-list {
+        display: none;
+    }
+
+    #messages {
+        height: 500px;
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    #friends-wrapper {
+        position: absolute !important;
+        left: 0;
+        top: 0;
+        background-color: transparent !important;
+    }
+
+    #color-tools {
+        bottom: 100px;
+        left: 25px;
+    }
+
+    .message {
+        margin: 0;
+    }
+}
