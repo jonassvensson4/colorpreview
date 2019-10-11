@@ -334,6 +334,13 @@ input:checked + .slider:before {
 
 /* Messages title, header */
 
+#messages {
+    overflow: auto;
+    height: 820px;
+    width: 100%;
+    margin-left: 340px;
+}
+
 #messages-title {
     height: 28px;
     padding: 10px;
@@ -411,7 +418,7 @@ input:checked + .slider:before {
 
 .message {
     color: var(--text-normal);
-    margin: 10px 20px 10px 340px;
+    margin: 10px 20px 10px 0;
     padding-top: 10px;
     border-bottom: 1px solid  var(--channeltextarea-background);
 }
