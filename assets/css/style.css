@@ -3,7 +3,12 @@
 @font-face {
     font-family: discord;
     font-weight: 400;
-    src: url(../fonts/discord.woff) format("woff")
+    src: url(../fonts/discord.woff) format("woff");
+}
+
+@font-face {
+    font-family: written;
+    src: url(../fonts/written.woff) format("woff");
 }
 
 * {
@@ -97,6 +102,16 @@ input:focus {
 }
 
 /* Friends list */
+
+.helper {
+    position: absolute;
+    left: -100vh;
+    top: 40%;
+    font-family: written;
+    font-size: 30px;
+    z-index: 1000;
+    color: var(--text-normal);
+}
 
 #friends-wrapper:not(hr) {
     float: left;
@@ -474,5 +489,9 @@ input:checked + .slider:before {
 
     .message {
         margin: 0;
+    }
+
+    .helper {
+        display: none !important;
     }
 }

@@ -1,3 +1,13 @@
+$('.helper').animate({
+    left: 84
+}, 2000, () => {
+    setTimeout(() => {
+        $('.helper').animate({
+            left: '-100vh'
+        }, 'slow');
+    }, 4000);
+});
+
 $('#theme').click(() => {
     $('body').toggleClass('theme-dark theme-light');
 });

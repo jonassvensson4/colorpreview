@@ -9,76 +9,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body class="theme-dark">
-        <div>
-            <div id="servers-wrapper">
-                <div id="servers-icons">
-                    <div class="server-icon" id="discord-logo">
-                        <span class="svg-discord"></span>
-                    </div>
-                    <div class="server-icon">
-                        <img src="assets/images/servericon.png" alt="server icon"/>
-                    </div>
+        <div id="servers-wrapper">
+            <div id="servers-icons">
+                <div class="server-icon" id="discord-logo">
+                    <span class="svg-discord"></span>
+                </div>
+                <div class="server-icon">
+                    <img src="assets/images/servericon.png" alt="server icon"/>
                 </div>
             </div>
-            <div id="friends-wrapper">
-                <div id="friends-menu-wrapper">
-                    <input placeholder="Find or start a conversation" type="text" spellcheck="false" />
-                    <hr />
-                    <div id="friends-menu">
-                        <p><span class="svg-activity"></span><span>Activity</span></p>
-                        <p><span class="svg-library"></span>Library</p>
-                        <p><span class="svg-nitro"></span>Nitro</p>
-                        <p><span class="svg-friends"></span>Friends</p>
-                    </div>
-                </div>
-                <div id="friends-list">
-                    <h1>Direct messages</h1>
-                    <div class="friend">
-                        <form id="avatar-input">
-                            <input type="text" spellcheck="false" autocomplete="off" placeholder="Direct link" value="https://i.gyazo.com/ede4b9da219a73a1b39bdd8e66f812eb.png"/>
-                        </form>
-                        <img src="https://i.gyazo.com/ede4b9da219a73a1b39bdd8e66f812eb.png" alt="Avatar" id="avatar" class="avatar"/>
-                        <input value="Username" type="text" id="username" spellcheck="false" autocomplete="off" placeholder="Username"/>
-                    </div>
-                </div>
-                <div id="color-tools">
-                    <div id="switch-wrapper">
-                        <p>Light theme</p>
-                        <label class="switch">        
-                            <input type="checkbox" id="theme" checked>
-                            <span class="slider round"></span>
-                        </label>
-                        <p>Dark theme</p>
-                    </div>
-                    <input id="hex" type="text" value="FFFFFF"/>
-                    <div id="colorPicker"></div>
+        </div>
+        <h6 class="helper">You can change the username and the avatar :)</h6>
+        <div id="friends-wrapper">
+            <div id="friends-menu-wrapper">
+                <input placeholder="Find or start a conversation" type="text" spellcheck="false" />
+                <hr />
+                <div id="friends-menu">
+                    <p><span class="svg-activity"></span><span>Activity</span></p>
+                    <p><span class="svg-library"></span>Library</p>
+                    <p><span class="svg-nitro"></span>Nitro</p>
+                    <p><span class="svg-friends"></span>Friends</p>
                 </div>
             </div>
-            <div id="messages-wrapper">
-                <div id="messages-title">
-                    <p><span class="svg-at">@</span><span class="username">Username</span></p>
-                    <div id="messages-actions">
-                        <span class="svg-call"></span>
-                        <span class="svg-video"></span>
-                        <span class="svg-pin"></span>
-                        <span class="svg-add"></span>
-                        <input placeholder="Search" type="test" spellcheck="false"/>
-                        <span class="svg-at"></span>
-                        <span class="svg-help"></span>
-                    </div>
+            <div id="friends-list">
+                <h1>Direct messages</h1>
+                <div class="friend">
+                    <form id="avatar-input">
+                        <input type="text" spellcheck="false" autocomplete="off" placeholder="Direct link" value="https://i.gyazo.com/ede4b9da219a73a1b39bdd8e66f812eb.png"/>
+                    </form>
+                    <img src="https://i.gyazo.com/ede4b9da219a73a1b39bdd8e66f812eb.png" alt="Avatar" id="avatar" class="avatar"/>
+                    <input value="Username" type="text" id="username" spellcheck="false" autocomplete="off" placeholder="Username"/>
                 </div>
-                <div id="messages">
-                    <div class="message">
-                        <img src="assets/images/avatar.png" alt="Avatar" class="avatar"/>
-                        <span class="username">Username</span>
-                        <span class="time">today at 3.15 PM</span>
-                        <p>Message</p>
-                    </div>
-                </div>
-                <form id="message-form">
-                    <input placeholder="Send message to Username" type="text" id="message-input" required spellcheck="false" autocomplete="off"/>
-                </form>
             </div>
+            <div id="color-tools">
+                <div id="switch-wrapper">
+                    <p>Light theme</p>
+                    <label class="switch">        
+                        <input type="checkbox" id="theme" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Dark theme</p>
+                </div>
+                <input id="hex" type="text" value="FFFFFF"/>
+                <div id="colorPicker"></div>
+            </div>
+        </div>
+        <div id="messages-wrapper">
+            <div id="messages-title">
+                <p><span class="svg-at">@</span><span class="username">Username</span></p>
+                <div id="messages-actions">
+                    <span class="svg-call"></span>
+                    <span class="svg-video"></span>
+                    <span class="svg-pin"></span>
+                    <span class="svg-add"></span>
+                    <input placeholder="Search" type="test" spellcheck="false"/>
+                    <span class="svg-at"></span>
+                    <span class="svg-help"></span>
+                </div>
+            </div>
+            <div id="messages">
+                <div class="message">
+                    <img src="assets/images/avatar.png" alt="Avatar" class="avatar"/>
+                    <span class="username">Username</span>
+                    <span class="time">today at 3.15 PM</span>
+                    <p>Message</p>
+                </div>
+            </div>
+            <form id="message-form">
+                <input placeholder="Send message to Username" type="text" id="message-input" required spellcheck="false" autocomplete="off"/>
+            </form>
         </div>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <script src="assets/js/jqx-all.js"></script>
